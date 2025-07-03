@@ -6,8 +6,9 @@ from utils.web_scrapping import  run_web_scrapping
 
 
 def main():
-    processed_articles = run_web_scrapping()
 
+    # Run the web scrapping to get top 5 titles
+    processed_articles = run_web_scrapping()
 
     for cnt in range(len(processed_articles)):
         # translate the spanish titles to english
@@ -16,7 +17,7 @@ def main():
     print(processed_articles)
 
     # run the counter function to print the words repeated more than twice
-    #count_words(processed_articles)
+    count_words(processed_articles)
 
 
 if __name__ == "__main__":
