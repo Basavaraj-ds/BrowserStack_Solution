@@ -1,10 +1,10 @@
 
 from typing import List
-from utils.Idata import article
+from utils.Idata import ArticleObject
 from collections import Counter
 
 
-def count_words(sample_data:List[article]):
+def count_words(sample_data:List[ArticleObject]):
 
     words = []
 
